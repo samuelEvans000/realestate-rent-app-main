@@ -1,0 +1,21 @@
+.data-preview-container{
+    width:100vw;
+    display: grid;
+    place-items: center;
+    margin-top: 6em;
+}
+.data-preview{
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    row-gap: 30px;
+    column-gap: 15px;
+}
+
+@media (max-width:768px){
+    .data-preview-container{
+        margin-top: 24em;
+    }
+    .data-preview{
+        grid-template-columns: repeat(1,360px);
+    }
+}
